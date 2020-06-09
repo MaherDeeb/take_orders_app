@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Wrapping the layout into /layout to make it available with data binding. -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="woodInvoicesViewModel"
+            type="com.example.woodinvoicetest.WoodInvoicesViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/mainUiStyle"
+        tools:context=".ConfirmEverything">
+
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="656dp"
+            android:layout_height="33dp"
+            android:gravity="center"
+            android:text="@string/doneText"
+            android:textSize="@dimen/mainTitleTextSize"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout20"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.558" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout20"
+            style="@style/mainUiStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="106dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.686"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.724">
+
+
+            <Button
+                android:id="@+id/printInvoiceButton"
+                style="@style/myButton"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:gravity="center"
+                android:text="@string/printInvoice"
+                android:textSize="@dimen/normalTextSize" />
+
+            <Button
+                android:id="@+id/backToMainScreen"
+                style="@style/myButton"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="8dp"
+                android:text="@string/backToMainScreen"
+                android:textSize="@dimen/normalTextSize" />
+
+            <Button
+                android:id="@+id/showInvoice"
+                style="@style/myButton"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="8dp"
+                android:text="@string/reviewInvoice"
+                android:textSize="@dimen/normalTextSize" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

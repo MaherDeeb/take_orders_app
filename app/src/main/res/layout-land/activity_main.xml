@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/enterScreen"
+    style="@style/mainUiStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout8"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.26">
+
+        <TextView
+            android:id="@+id/companyName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/companyName"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/mainTitleTextSize" />
+
+        <TextView
+            android:id="@+id/companyAdress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/companyAddress"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/normalTextSize" />
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:id="@+id/linearLayoutButtons"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout8">
+
+        <Button
+            android:id="@+id/exitProgramButton"
+            style="@style/myButton"
+            android:layout_width="180dp"
+            android:text="@string/exitProgramButtonText"
+            android:textSize="@dimen/normalTextSize" />
+
+        <Button
+            android:id="@+id/enterMaterialProductButton"
+            style="@style/myButton"
+            android:layout_width="180dp"
+            android:text="@string/materialProductButtonText"
+            android:textSize="@dimen/normalTextSize" />
+
+        <Button
+            android:id="@+id/showInvoicesButton"
+            style="@style/myButton"
+            android:layout_width="180dp"
+            android:text="@string/showInvoicesButtonText"
+            android:textSize="@dimen/normalTextSize" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:gravity="bottom|center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <DigitalClock
+            android:id="@+id/simpleDigitalClock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="150dp"
+            android:gravity="center"
+            android:textSize="@dimen/normalTextSize" />
+
+        <TextView
+            android:id="@+id/actualDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:gravity="center"
+            android:text="@string/dataPlaceholder"
+            android:textSize="@dimen/normalTextSize" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,2 @@
+rootProject.name='Wood Invoice Test'
+include ':app'

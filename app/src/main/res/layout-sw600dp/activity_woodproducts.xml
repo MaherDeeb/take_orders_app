@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/mainUiStyle"
+    tools:context=".WoodProducts">
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_height="wrap_content"
+        android:text="@string/backToPreviousProperty"
+        android:textSize="@dimen/normalTextSize"
+        android:layout_width="100dp"
+        style="@style/myButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/woodProductGrid" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/woodProductGrid"
+        android:layout_width="0dp"
+        android:layout_height="454dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="100dp"
+        app:columnCount="5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rowCount="2">
+
+        <Button
+            android:id="@+id/button1_1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/buttonPlaceHolder"
+            android:textSize="@dimen/normalTextSize"
+            style="@style/choosingButton"
+            android:visibility="visible"
+            app:layout_columnWeight="0.2"
+            app:layout_rowWeight="0.5" />
+
+        <Button
+            android:id="@+id/button1_2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/buttonPlaceHolder"
+            android:textSize="@dimen/normalTextSize"
+            style="@style/choosingButton"
+            app:layout_columnWeight="0.2"
+            app:layout_rowWeight="0.5" />
+
+        <Button
+            android:id="@+id/button1_3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/buttonPlaceHolder"
+            android:textSize="@dimen/normalTextSize"
+            style="@style/choosingButton"
+            app:layout_columnWeight="0.2"
+            app:layout_rowWeight="0.5" />
+
+        <Button
+            android:id="@+id/button1_4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/buttonPlaceHolder"
+            android:textSize="@dimen/normalTextSize"
+            style="@style/choosingButton"
+            app:layout_columnWeight="0.2"
+            app:layout_rowWeight="0.5" />
+
+        <Button
+            android:id="@+id/button1_5"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/buttonPlaceHolder"
+            android:textSize="@dimen/normalTextSize"
+            style="@style/choosingButton"
+            app:layout_columnWeight="0.2"
+            app:layout_rowWeight="0.5" />
+
+        <Button
+            android:id="@+id/button2_1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/buttonPlaceHolder"
+            android:textSize="@dimen/normalTextSize"
+            style="@style/choosingButton"
+            app:layout_columnWeight="0.2"
+            app:layout_rowWeight="0.5" />
+
+        <Button
+            android:id="@+id/button2_2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/buttonPlaceHolder"
+            android:textSize="@dimen/normalTextSize"
+            style="@style/choosingButton"
+            app:layout_columnWeight="0.2"
+            app:layout_rowWeight="0.5" />
+
+        <Button
+            android:id="@+id/button2_3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/buttonPlaceHolder"
+            android:textSize="@dimen/normalTextSize"
+            style="@style/choosingButton"
+            app:layout_columnWeight="0.2"
+            app:layout_rowWeight="0.5" />
+
+        <Button
+            android:id="@+id/button2_4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/buttonPlaceHolder"
+            android:textSize="@dimen/normalTextSize"
+            style="@style/choosingButton"
+            app:layout_columnWeight="0.2"
+            app:layout_rowWeight="0.5" />
+
+        <Button
+            android:id="@+id/button2_5"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/buttonPlaceHolder"
+            android:textSize="@dimen/normalTextSize"
+            style="@style/choosingButton"
+            app:layout_columnWeight="0.2"
+            app:layout_rowWeight="0.5" />
+    </androidx.gridlayout.widget.GridLayout>
+
+    <TextView
+        android:id="@+id/productHintTextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/propertyPlaceHolder"
+        android:textSize="@dimen/mainTitleTextSize"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/woodProductGrid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.765" />
+
+    <Button
+        android:id="@+id/cancelInvoiceButton"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@drawable/my_cancel_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/backButton"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/woodProductGrid"
+        app:layout_constraintVertical_bias="0.485" />
+
+    <TextView
+        android:id="@+id/theChosenTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/theChosenPlaceHolder"
+        app:layout_constraintBottom_toTopOf="@+id/productHintTextview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
