@@ -12,8 +12,8 @@
         android:type="linear"
         />
     <size
-        android:width="270dp"
-        android:height="60dp"
+        android:width="200dp"
+        android:height="50dp"
         />
     <stroke
         android:width="3dp"

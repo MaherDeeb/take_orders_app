@@ -42,7 +42,8 @@
                 android:id="@+id/printInvoiceButton"
                 style="@style/myButton"
                 android:layout_marginTop="8dp"
-                android:width="400sp"
+                android:layout_height="wrap_content"
+                android:layout_width="220dp"
                 android:gravity="center"
                 android:text="@string/printInvoice"
                 android:textSize="@dimen/normalTextSize" />
@@ -51,7 +52,8 @@
                 android:id="@+id/showInvoice"
                 style="@style/myButton"
                 android:layout_marginTop="8dp"
-                android:width="400sp"
+                android:layout_height="wrap_content"
+                android:layout_width="220dp"
                 android:gravity="center"
                 android:text="@string/reviewInvoice"
                 android:textSize="@dimen/normalTextSize" />
@@ -60,7 +62,8 @@
                 android:id="@+id/backToMainScreen"
                 style="@style/myButton"
                 android:layout_marginTop="8dp"
-                android:width="400sp"
+                android:layout_height="wrap_content"
+                android:layout_width="220dp"
                 android:gravity="center"
                 android:text="@string/backToMainScreen"
                 android:textSize="@dimen/normalTextSize" />

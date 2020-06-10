@@ -18,35 +18,35 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.832">
+        app:layout_constraintVertical_bias="1.0">
 
         <Button
             android:id="@+id/cancelButton"
-            android:layout_width="200dp"
-            android:layout_height="57dp"
+            style="@style/myButton"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
-            style="@style/myButton"
             android:text="@string/cancelInvoiceText"
             android:textSize="@dimen/normalTextSize" />
 
         <Button
             android:id="@+id/paymentButton"
-            android:layout_width="200dp"
-            android:layout_height="57dp"
+            style="@style/myButton"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
-            style="@style/myButton"
             android:text="@string/payment"
             android:textSize="@dimen/normalTextSize" />
 
         <Button
             android:id="@+id/addProductbutton"
-            android:layout_width="200dp"
-            android:layout_height="57dp"
+            style="@style/myButton"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
-            style="@style/myButton"
             android:text="@string/addNewProduct"
             android:textSize="@dimen/normalTextSize" />
 
@@ -95,7 +95,7 @@
 
     <ScrollView
         android:layout_width="0dp"
-        android:layout_height="116dp"
+        android:layout_height="167dp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout9"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
