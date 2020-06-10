@@ -19,7 +19,7 @@ $ git clone https://github.com/MaherDeeb/take_orders_app.git
 ## App flow:
 
 
-(add video)
+Check the Demo [here](https://youtu.be/8MdLv3h-j-o)
 
 ## Next Step
 
@@ -33,4 +33,4 @@ The App is a part of a data pipeline. The pipeline contains several components:
 6. An experimental environment to analyze the data. The data should answer some important business questions such as the next best offer for each customer,  the customer lifetime value, and so on.
 7. A simple dashboard helps the manager observe how the company does in the short and long terms.
 
-(link to the other repos and articles)
+For more information you, check my [article](https://www.linkedin.com/pulse/ai-value-season-1-episode-maher-deeb)

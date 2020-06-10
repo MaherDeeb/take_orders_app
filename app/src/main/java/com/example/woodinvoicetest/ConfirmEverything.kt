@@ -83,7 +83,7 @@ class ConfirmEverything : AppCompatActivity() {
         val pdfPath = Common.getAppPath(this@ConfirmEverything) + filename
         createPDFFile(pdfPath)
 //        Toast.makeText(this, "the pdf path is $pdfPath", Toast.LENGTH_SHORT).show()
-//        Toast.makeText(this, "تم إرسال الفاتورة إلى الطابعة بنجاح", Toast.LENGTH_LONG).show()
+        Toast.makeText(this, "This feature is in development", Toast.LENGTH_LONG).show()
     }
 
     override fun onBackPressed() {
@@ -138,7 +138,7 @@ class ConfirmEverything : AppCompatActivity() {
     fun sendInvoiceToServer(jsonOrderedInvoice: String) {
         val externalURL = getString(R.string.externalServerUrl)
         val internalURL = getString(R.string.internalServerUrl)
-        val stringRequest: StringRequest = object : StringRequest(Request.Method.POST, externalURL,
+        val stringRequest: StringRequest = object : StringRequest(Request.Method.POST, internalURL,
             Response.Listener<String> { response ->
                 try {
                     Log.i(

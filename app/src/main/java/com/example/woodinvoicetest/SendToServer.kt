@@ -111,7 +111,7 @@ class SendToServer : AppCompatActivity() {
     private fun sendInvoiceToServer(jsonOrderedInvoice: String) {
         val externalURL = getString(R.string.externalServerUrl)
         val internalURL = getString(R.string.internalServerUrl)
-        val stringRequest: StringRequest = object : StringRequest(Request.Method.POST, externalURL,
+        val stringRequest: StringRequest = object : StringRequest(Request.Method.POST, internalURL,
             Response.Listener { response ->
                 try {
                     Log.i(

@@ -163,7 +163,7 @@ var product9 = AvailableProduct(
     productName = MaterialName.Product9.toString(),
     arabicProductName = availableProducts[8],
     productType = ProductType.Plywood.toString(),
-    availableThickness = arrayListOf(12.0, 12.0, 0.0),
+    availableThickness = arrayListOf(12.0, 0.0),
     availableProperty2 = arrayListOf("Colored", "White"),
     originCountry = "Different"
 )
